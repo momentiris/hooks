@@ -26,7 +26,6 @@ jobs:
       - name: Run tests and linting
         run: |
           npm ci
-          npm run lint --if-present
-          npm test
+          npm run test:ci
         env:
           CI: true
