@@ -1,0 +1,64 @@
+{
+  "name": "@momentiris/hooks",
+  "version": "0.0.0",
+  "main": "dist/hooks.cjs.js",
+  "module": "dist/hooks.esm.js",
+  "types": "dist/types/index.d.ts",
+  "description": "Hooksies for me and you",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "test:watch": "jest --watch",
+    "test:ci": "jest",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "rollup -c",
+    "build": "npm run build:types && npm run build:js",
+    "semantic-release": "semantic-release"
+  },
+  "keywords": [],
+  "author": "momentiris <momentiris@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "@babel/preset-react": "7.0.0",
+    "@babel/preset-typescript": "7.3.3",
+    "@semantic-release/changelog": "3.0.4",
+    "@semantic-release/git": "7.0.16",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/react-hooks": "2.0.1",
+    "@types/jest": "24.0.18",
+    "@types/react": "16.9.2",
+    "husky": "3.0.4",
+    "jest": "24.9.0",
+    "jest-environment-jsdom": "24.9.0",
+    "jest-environment-jsdom-global": "1.2.0",
+    "lint-staged": "9.2.4",
+    "prettier": "1.18.2",
+    "pretty-quick": "1.11.1",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-test-renderer": "^16.12.0",
+    "rollup": "1.20.2",
+    "rollup-plugin-babel": "4.3.3",
+    "rollup-plugin-commonjs": "10.0.2",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "semantic-release": "^15.13.31",
+    "ts-jest": "24.0.2",
+    "typescript": "3.5.3"
+  },
+  "bugs": {
+    "url": "https://github.com/momentiris/hooks/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/momentiris/hooks.git"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "dependencies": {}
+}
