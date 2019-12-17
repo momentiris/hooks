@@ -4,7 +4,7 @@
   "main": "dist/hooks.cjs.js",
   "module": "dist/hooks.esm.js",
   "types": "dist/types/index.d.ts",
-  "description": "Hooksies for me and you",
+  "description": "A collection of React hooks",
   "publishConfig": {
     "access": "public"
   },
